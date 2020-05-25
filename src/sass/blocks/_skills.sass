@@ -1,0 +1,156 @@
+.skills
+  margin-top: 50px
+  &__item
+    display: flex
+    position: relative
+    flex-direction: column
+    &-grafic
+      top: 67px
+      height: 0
+      width: 100%
+      display: flex
+      background: #EAEAEA
+      align-items: flex-end
+      border: 1px solid #EAEAEA
+      z-index: 2
+      margin-bottom: 15px
+      transition: 1s
+      &_active
+        height: 300px
+      & img
+        width: 90%
+      & .col
+        width: 8%
+        font-size: 20px
+        display: flex
+        justify-content: center
+        align-items: flex-end
+        margin-right: 10px
+        color: #fff
+        box-sizing: border-box
+        padding-bottom: 10px
+        opacity: 0
+        transition: 0.5s
+        &_active
+          opacity: 1
+      &-ps 
+        height: 90%
+        background: #110f1a
+      &-muse 
+        height: 45%
+        background: #1f2600
+      &-dw 
+        height: 35%
+        background: #072600
+      &-lr
+        height: 70% 
+        background: #0c3141
+      &-figma 
+        background: #141519
+        height: 85%  
+      &-html
+        height: 90%
+        background: #f16529
+      &-css
+        height: 80%
+        background: #3d9cd7
+      &-sass 
+        height: 80%
+        background: #cc6699
+      &-bt
+        height: 90% 
+        background: #563a7d
+      &-gulp
+        height: 60%
+        background: #df4c4e
+      &-js
+        height: 80%
+        background: #f7df1e
+      &-jq
+        height: 60%
+        background: #0769ad
+      &-git
+        height: 40%
+        background: #fff
+      &-wp
+        background: #21759b
+        height: 55%
+      &-modx
+        background: #6eba4e
+        height: 40%
+      &-bitrix 
+        height: 25%
+        background: #fff
+      &-textoline
+        background: #5c5c5f
+        height: 75%
+  &__title
+    font-weight: 500
+    font-size: 24px
+    line-height: 28px
+    text-transform: uppercase
+    & span
+      font-size: 14px
+      text-transform: none
+  &__progresbar
+    width: 100%
+    height: 30px
+    position: relative
+    background: #EAEAEA
+    display: flex
+    align-items: center
+    font-size: 20px
+    margin: 5px 0 25px 0
+    &-detail
+      position: absolute
+      right: 40px
+      cursor: pointer
+  &-cross
+    position: absolute
+    right: 0
+    width: 30px
+    height: 30px
+    border: 1px solid #000
+    box-sizing: border-box
+    cursor: pointer
+    &::before, &::after
+      content: ''
+      position: absolute
+      width: 20px 
+      height: 2px
+      background: #000
+      top: 50%  
+      margin-top: -1px
+      left: 5px
+    &::after
+      transform: rotate(90deg)
+      transition: 0.5s
+    &:hover
+      &::before, &::after
+        width: 22px
+        left: 4px
+    &-active
+      &::after
+        transform: rotate(0deg)
+      &:hover
+        &::before
+          width: 22px
+          left: 4px
+        &::after
+          transform: rotate(0deg)
+
+.progres
+  width: 80%
+  height: 100%
+  background: #6202EE
+  margin-right: 1%
+.design
+  width: 60%
+  height: 100%
+  background:  #01A39D
+  margin-right: 1%    
+.admin
+  width: 50%
+  height: 100%
+  background: #00696B 
+  margin-right: 1% 

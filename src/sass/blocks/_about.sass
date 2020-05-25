@@ -1,0 +1,71 @@
+.about
+  display: flex
+  margin-top: 75px
+  & .container
+    flex-direction: row
+    justify-content: space-between
+  &__content
+    overflow: hidden
+    width: 54%
+  &__img
+    background: #000 url(../img/hero-img.png) center/cover
+    width: 45%
+  & .section__text
+    margin-bottom: 45px 
+  & .btn
+    margin: 0 auto
+    border-radius: 5px
+  
+.hover-efect
+  position: relative
+  color: $purple
+  text-decoration: underline
+  cursor: pointer
+  &::before
+    content: ''
+    position: absolute
+    width: 300%
+    max-width: 350px
+    left: 410%
+    top: -5px
+    padding: 5px
+    border: 1px solid #C4C4C4
+    background: #fff
+    transition: 0.5s
+    opacity: 0
+    font-size: 14px
+    line-height: 18px
+    z-index: 10
+  &::after
+    content: ''
+    position: absolute
+    left: 410%
+    top: 0
+    width: 15px
+    height: 15px
+    background: #C4C4C4
+    shape-outside: polygon(0 0, 0 100px, 100px 100px)
+    clip-path: polygon(15px 0, 0 7px, 15px 15px)
+    transition: 0.5s
+    opacity: 0
+  &:hover
+    &::before
+      display: block
+      left: 30%
+      opacity: 1
+    &::after
+      left: 27%
+      opacity: 1
+
+.browser
+  &::before
+    content: '– способность веб-ресурса отображаться одинаково и работать во всех популярных браузерах'
+.adaptive
+  &::before
+    content: '-правильное отображение сайта на различных устройствах,подстраивающийся под заданные размеры окна браузера'
+.speed
+  &::before
+    content: 'показатель времени прошедшего между кликом по ссылке адреса сайта и его полным отображением в окне браузера'
+.optimization
+    &::before
+      content: 'это ряд мероприятий, направленный на то, чтобы сделать ресурс не только полезным и интересным для посетителей, но и привлекательным для поисковых систем'
