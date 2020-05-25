@@ -1,0 +1,41 @@
+.portfolio
+  padding-top: 75px
+  & .section__title
+    margin-top: 45px
+    color: $while
+  &__exemple
+    display: flex
+    justify-content: space-between
+    margin-top: 45px
+    height: 430px 
+    box-shadow: 4px 4px 25px rgba(153, 153, 153, 0.25)
+  &__descrip
+    padding-left: 40px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    width: 30%
+    height: 100%
+    background: $while
+    font-weight: 500
+    & div 
+      margin-top: 20px
+      &:first-child
+        margin-top: 0px 
+    &-title
+      font-size: 30px
+      line-height: 35px
+      letter-spacing: 0.25px
+    &-subtitle
+      line-height: 21px
+    &-text
+      font-weight: 300  
+  &__slider
+    width: 70%
+    height: 100%
+    background: url(../img/portfolio/luky.jpg) center/cover 
+.fluid-line
+  position: absolute 
+  width: 100%
+  height: 162px 
+  background: $purple

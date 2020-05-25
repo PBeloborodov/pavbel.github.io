@@ -710,11 +710,15 @@ canvas {
 .cost__item {
   width: 30%;
   max-width: 378px;
-  height: 555px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   box-shadow: 4px 4px 25px rgba(153, 153, 153, 0.25); }
+  .cost__item-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
   .cost__item-title {
     text-align: center;
     font-weight: 300;
@@ -737,6 +741,49 @@ canvas {
   line-height: 152px;
   letter-spacing: 0.382653px;
   color: #AC69FE; }
+
+.portfolio {
+  padding-top: 75px; }
+  .portfolio .section__title {
+    margin-top: 45px;
+    color: #ffffff; }
+  .portfolio__exemple {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+    height: 430px;
+    box-shadow: 4px 4px 25px rgba(153, 153, 153, 0.25); }
+  .portfolio__descrip {
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    height: 100%;
+    background: #ffffff;
+    font-weight: 500; }
+    .portfolio__descrip div {
+      margin-top: 20px; }
+      .portfolio__descrip div:first-child {
+        margin-top: 0px; }
+    .portfolio__descrip-title {
+      font-size: 30px;
+      line-height: 35px;
+      letter-spacing: 0.25px; }
+    .portfolio__descrip-subtitle {
+      line-height: 21px; }
+    .portfolio__descrip-text {
+      font-weight: 300; }
+  .portfolio__slider {
+    width: 70%;
+    height: 100%;
+    background: url(../img/portfolio/luky.jpg) center/cover; }
+
+.fluid-line {
+  position: absolute;
+  width: 100%;
+  height: 162px;
+  background: #6202EE; }
 
 @media screen and (max-width: 1200px) {
   .container {
