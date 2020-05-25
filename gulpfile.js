@@ -43,8 +43,6 @@ function minCss(){
   .pipe(dest('./dist/css'))
   .pipe(browserSync.reload({stream: true}));
 }
-function addFonts(){
-  return src('./src/fonts/**/*').pipe(dest('./dist/fonts'));
-}
-exports.start = parallel(bs, watchServe, addFonts);
+
+exports.start = parallel(bs, watchServe);
  
