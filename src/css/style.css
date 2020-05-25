@@ -751,17 +751,18 @@ canvas {
     display: flex;
     justify-content: space-between;
     margin-top: 45px;
-    height: 430px;
+    height: 500px;
     box-shadow: 4px 4px 25px rgba(153, 153, 153, 0.25); }
   .portfolio__descrip {
-    padding-left: 40px;
+    padding: 25px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 30%;
+    justify-content: space-between;
+    width: 35%;
     height: 100%;
     background: #ffffff;
-    font-weight: 500; }
+    font-weight: 500;
+    box-sizing: border-box; }
     .portfolio__descrip div {
       margin-top: 20px; }
       .portfolio__descrip div:first-child {
@@ -773,17 +774,48 @@ canvas {
     .portfolio__descrip-subtitle {
       line-height: 21px; }
     .portfolio__descrip-text {
+      font-size: 16px;
       font-weight: 300; }
   .portfolio__slider {
-    width: 70%;
-    height: 100%;
+    position: relative;
+    width: 65%;
     background: url(../img/portfolio/luky.jpg) center/cover; }
+    .portfolio__slider img {
+      position: absolute;
+      width: 100px;
+      bottom: 10px;
+      right: 20px; }
 
 .fluid-line {
   position: absolute;
   width: 100%;
   height: 162px;
   background: #6202EE; }
+
+.contacts .container {
+  display: flex; }
+
+.contacts__content {
+  display: flex; }
+
+.contacts__info {
+  display: flex;
+  flex-direction: column;
+  width: 48%; }
+  .contacts__info .section__text {
+    display: flex;
+    align-items: center; }
+  .contacts__info img {
+    width: 30px;
+    margin-right: 10px; }
+  .contacts__info span {
+    margin-bottom: 15px; }
+
+.contacts__forma {
+  width: 48%; }
+
+.footer {
+  height: 200px; }
 
 @media screen and (max-width: 1200px) {
   .container {
@@ -803,7 +835,22 @@ canvas {
     align-items: center; }
   .cost__item {
     width: 90%;
-    max-width: 90%; } }
+    max-width: 90%; }
+  .portfolio__exemple {
+    flex-direction: column;
+    height: auto; }
+  .portfolio__descrip {
+    width: 100%; }
+  .portfolio__slider {
+    width: 100%;
+    height: 500px;
+    background: url(../img/portfolio/mob-bg.jpg) top/cover; }
+  .contacts__content {
+    flex-direction: column; }
+  .contacts__info {
+    width: 100%; }
+  .contacts__forma {
+    width: 100%; } }
 
 @media screen and (max-width: 767px) {
   html {
@@ -838,7 +885,9 @@ canvas {
   .stages__item {
     max-width: 90%; }
     .stages__item-title {
-      font-size: 26px; } }
+      font-size: 26px; }
+  .portfolio__slider img {
+    display: none; } }
 
 @media screen and (max-width: 575px) {
   html {

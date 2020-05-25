@@ -7,17 +7,18 @@
     display: flex
     justify-content: space-between
     margin-top: 45px
-    height: 430px 
+    height: 500px 
     box-shadow: 4px 4px 25px rgba(153, 153, 153, 0.25)
   &__descrip
-    padding-left: 40px
+    padding: 25px
     display: flex
     flex-direction: column
-    justify-content: center
-    width: 30%
+    justify-content: space-between
+    width: 35%
     height: 100%
     background: $while
     font-weight: 500
+    box-sizing: border-box
     & div 
       margin-top: 20px
       &:first-child
@@ -29,11 +30,17 @@
     &-subtitle
       line-height: 21px
     &-text
+      font-size: 16px
       font-weight: 300  
   &__slider
-    width: 70%
-    height: 100%
-    background: url(../img/portfolio/luky.jpg) center/cover 
+    position: relative
+    width: 65%
+    background: url(../img/portfolio/luky.jpg) center/cover
+    & img  
+      position: absolute
+      width: 100px
+      bottom: 10px
+      right: 20px
 .fluid-line
   position: absolute 
   width: 100%
