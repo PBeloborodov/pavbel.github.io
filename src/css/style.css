@@ -813,6 +813,28 @@ canvas {
 
 .contacts__forma {
   width: 48%; }
+  .contacts__forma-title {
+    font-size: 25px;
+    font-weight: normal;
+    margin: 0; }
+  .contacts__forma-subtitle {
+    margin-top: 15px;
+    font-weight: 500; }
+  .contacts__forma-input {
+    height: 35px;
+    width: 100%; }
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .form .row {
+    width: 45%; }
+    .form .row:nth-child(n+3) {
+      width: 100%; }
+
+.input-message {
+  height: 100px; }
 
 .footer {
   height: 200px; }
