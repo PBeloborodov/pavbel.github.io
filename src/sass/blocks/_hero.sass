@@ -99,3 +99,66 @@ canvas
       width: 2px
       height: 25px
       background: $while
+
+.nav  
+  min-width: 280px
+  max-width: 480px
+  width: 100%
+  position: absolute
+  display: flex
+  flex-direction: column
+  right: 0
+  top: 0
+  z-index: 10
+  height: 700px
+  background: $while
+  color: #000
+  box-sizing: border-box
+  box-shadow: rgba(153, 153, 153, 0.25) 4px 4px 25px
+  &__item
+    position: relative
+    height: 10%
+    font-size: 25px  
+    cursor: pointer
+    transition: 0.5s
+    & a
+      display: flex
+      align-items: center
+      padding-left: 55px
+      width: 100%
+      height: 100%   
+      color: #000
+      text-decoration: none
+    &:hover
+      background: rgba(0, 0, 0, 0.4)
+  &-cross 
+    position: relative
+    left: 85%
+    margin-top: 15%
+    width: 35px
+    height: 35px
+    cursor: pointer
+    &::after, &::before
+      content: ""
+      position: absolute
+      right: 10%
+      width: 35px
+      height: 3px
+      background: #000
+      transform: rotate(-45deg)
+    &::after
+      transform: rotate(45deg)
+
+
+.modal
+  display: none
+  position: absolute
+  height: 100vh
+  width: 100vw
+  background: rgba(0, 0, 0, 0.8)
+  z-index: 10
+
+.active 
+  display: flex
+
+  overflow: hidden

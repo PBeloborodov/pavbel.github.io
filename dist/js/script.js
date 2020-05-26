@@ -34,13 +34,7 @@ window.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-
-
-
 // маска для полей ввода телефона 
-
-
-
 function maskPhone(selector, masked = '+7 (___) ___-__-__') {
 	const elem = document.querySelector(selector);
 
@@ -76,10 +70,37 @@ function maskPhone(selector, masked = '+7 (___) ___-__-__') {
 	elem.addEventListener("focus", mask);
 	elem.addEventListener("blur", mask);
 }
-
   maskPhone(`#phone-form`);
 
+ // активация верхнего меню
+ let modal = document.querySelector(".modal"); 
+ let hero = document.querySelector(".hero");
 
-  
-  
+ hero.addEventListener("click", (event)=>{
+  let target = event.target;
+  if(target.classList.contains("hero__burger") || target.classList.contains("hero__burger-line")){
+    modal.classList.add("active");
+    document.querySelector('html').style.overflow = "hidden";
+  }else{
+    modal.classList.remove("active");
+    document.querySelector('html').style.overflow = "";
+
+  } 
+ })
+
+
+ // плавная прокрутка до блоков 
+let nav = document.querySelector('.nav');
+ const navItems = nav.querySelectorAll("a");
+for (let anchor of navItems) {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault()
+    const blockID = anchor.getAttribute('href');
+    document.querySelector(blockID).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+  })
+}
+
 });
