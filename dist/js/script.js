@@ -74,7 +74,7 @@ window.addEventListener('DOMContentLoaded', function () {
   maskPhone(`#phone-form`);
 
   // активация верхнего меню
-  let modal = document.querySelector(".modal");
+  let modal = document.querySelector(".modal-nav");
   let hero = document.querySelector(".hero");
 
   hero.addEventListener("click", (event) => {
@@ -103,6 +103,16 @@ window.addEventListener('DOMContentLoaded', function () {
       })
     })
   }
+  // плавный скрол и главного банера до этапов работы 
+  let  linkOnStages = document.querySelector("#link-on-stages");
+  linkOnStages.addEventListener("click", function (e) {
+    e.preventDefault()
+    const blockID = linkOnStages.getAttribute('href');
+    document.querySelector(blockID).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+  })
 // валидация поля email 
 
 let formMail = document.querySelector("#form-mail");

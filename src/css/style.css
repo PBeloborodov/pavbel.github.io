@@ -356,6 +356,9 @@ html {
   .btn:hover {
     background: #AC69FE; }
 
+a {
+  text-decoration: none; }
+
 canvas {
   position: absolute;
   top: 0;
@@ -507,7 +510,7 @@ canvas {
     .nav-cross::after {
       transform: rotate(45deg); }
 
-.modal {
+.modal-nav {
   display: none;
   position: absolute;
   height: 100vh;
