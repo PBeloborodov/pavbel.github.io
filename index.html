@@ -166,7 +166,7 @@
         <div class="stages__item">
           <div class="stages__item-number">2</div>
           <div class="stages__item-title">Сроки</div>
-          <div class="section__text stages__item-descr">Устанавливаем крайнею дату сдачи проекта</div>
+          <div class="section__text stages__item-descr">Устанавливаем крайнюю дату сдачи проекта</div>
         </div>
         <div class="stages__item">
           <div class="stages__item-number">3</div>
@@ -315,7 +315,8 @@
         </div>
         <div class="contacts__forma  section__text">
           <h4 class="contacts__forma-title">Укажите Ваши и я сам Вам перезвоню</h4>
-          <form action="./dist/php/mail.php" method="POST" class="form">
+
+          <form action="./dist/php/telegram.php" method="POST" class="form" id="contacs-form">
             <div class="row">
               <div class="contacts__forma-subtitle">Ваше имя</div>
               <input type="text" name="form-name" placeholder="Ваше имя" class="contacts__forma-input" required>
@@ -325,13 +326,13 @@
               <input type="text"  name="form-phone" placeholder="Ваш телефон" class="contacts__forma-input" id="phone-form" required>
             </div>
             <div class="row">
-              <div class="contacts__forma-subtitle">Ваш email</div>
-              <input type="text" name="form-mail" placeholder="Ваш email" class="contacts__forma-input" >
+              <div class="contacts__forma-subtitle ">Ваш email</div>
+              <input type="text" name="form-mail" placeholder="Ваш email" class="contacts__forma-input" id="form-mail" >
             </div>
             <div class="row input-messange">
               <div class="contacts__forma-subtitle">Ваше сообщение</div>
               <textarea name="form-massege" placeholder="Ваше сообщение, можно просто 'Привет!' " class="contacts__forma-input input-message"></textarea>
-              <button type="submit" class="btn">Отправить</button>
+              <input type="submit" value="Отправить" class="btn">
             </div>
 
           </form>

@@ -4,6 +4,7 @@ window.addEventListener('DOMContentLoaded', function () {
   let skillsProgresbar = document.querySelectorAll('.skills__progresbar');
   let skillsItemGrafic = document.querySelectorAll('.skills__item-grafic');
 
+  //анимация навыков раскрытие пунктов
   skillsCross.forEach((elem) => {
     elem.onclick = () => {
       elem.classList.toggle('skills-cross-active');
@@ -102,6 +103,27 @@ window.addEventListener('DOMContentLoaded', function () {
       })
     })
   }
+// валидация поля email 
+
+let formMail = document.querySelector("#form-mail");
+
+formMail.addEventListener("change", ()=>{
+  validate("contacs-form","form-mail");
+})
+
+function validate(form_id,email) {
+  var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+  var address = document.forms[form_id].elements[email].value;
+  if(reg.test(address) == false) {
+    formMail.classList.add("error-mail");
+    formMail.previousElementSibling.classList.add("error-subtitle");
+     return false;
+  }else{
+    formMail.classList.remove("error-mail");
+    formMail.previousElementSibling.classList.remove("error-subtitle");
+  }
+}
+
 
 });
 

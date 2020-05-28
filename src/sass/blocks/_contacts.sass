@@ -38,6 +38,19 @@
     width: 45%
     &:nth-child(n+3)
       width: 100%
+.error-subtitle
+  color: rgb(255, 5, 5)
+  position: relative
+  &::after
+    position: absolute
+    content: "введите коректный email"
+    font-style: italic
+    right: 0px
+    bottom: -65px
+    font-size: 12px
+.error-mail
+  position: relative
+  background: rgba(255, 5, 5, 0.4)
 
 .input-message 
   height: 100px

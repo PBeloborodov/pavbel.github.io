@@ -347,6 +347,9 @@ html {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
   color: #ffffff;
   cursor: pointer;
   z-index: 3; }
@@ -422,7 +425,6 @@ canvas {
   .hero__btn {
     position: relative;
     margin-bottom: 20px;
-    border-radius: 5px;
     cursor: pointer;
     z-index: 2; }
   .hero__social {
@@ -896,6 +898,21 @@ canvas {
     width: 45%; }
     .form .row:nth-child(n+3) {
       width: 100%; }
+
+.error-subtitle {
+  color: #ff0505;
+  position: relative; }
+  .error-subtitle::after {
+    position: absolute;
+    content: "введите коректный email";
+    font-style: italic;
+    right: 0px;
+    bottom: -65px;
+    font-size: 12px; }
+
+.error-mail {
+  position: relative;
+  background: rgba(255, 5, 5, 0.4); }
 
 .input-message {
   height: 100px; }
