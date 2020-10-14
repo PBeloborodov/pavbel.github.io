@@ -844,13 +844,20 @@ canvas {
       font-weight: 300; }
   .portfolio__slider {
     position: relative;
-    width: 65%;
-    background: url(../img/portfolio/luky.jpg) center/cover; }
+    width: 65%; }
     .portfolio__slider img {
       position: absolute;
       width: 100px;
       bottom: 10px;
       right: 20px; }
+    .portfolio__slider.luky {
+      background: url(../img/portfolio/luky.jpg) center/cover; }
+    .portfolio__slider.fitnes {
+      background: url(../img/portfolio/fitnes.png) center/cover; }
+    .portfolio__slider.form-doc {
+      background: url(../img/portfolio/form-dogovor.jpg) center/cover; }
+    .portfolio__slider.form-size {
+      background: url(../img/portfolio/form-size.jpg) center/cover; }
 
 .fluid-line {
   position: absolute;
@@ -1001,3 +1008,6 @@ canvas {
 
 body {
   font-family: 'Roboto', sans-serif; }
+
+.slider .slick-next:before, .slider .slick-prev:before {
+  color: black; }

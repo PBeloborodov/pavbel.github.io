@@ -11,6 +11,8 @@
   <link rel="stylesheet" media="screen" href="./dist/css/style.min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./dist/js/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="./dist/js/slick/slick-theme.css"/>
   <script src="https://kit.fontawesome.com/0741bfcbc2.js" crossorigin="anonymous"></script>
 </head>
 
@@ -270,33 +272,87 @@
       <div class="section__title">
         Портфолио
       </div>
-      <div class="portfolio__exemple">
-        <div class="portfolio__descrip">
-          <div class="portfolio__descrip-title">Авторский практикум </div>
-          <div class="portfolio__descrip-subtitle">
-            <span>Описание проекта</span> <br>
-            <span class="portfolio__descrip-text">
-              Одностраничный сайт для привлечения клиентов на авторский курс. 
+      <div class="slider">
+        <div class="slider__item">
+          <div class="portfolio__exemple">
+            <div class="portfolio__descrip">
+              <div class="portfolio__descrip-title">Авторский практикум </div>
+              <div class="portfolio__descrip-subtitle">
+                <span>Описание проекта</span> <br>
+                <span class="portfolio__descrip-text">
+              Одностраничный сайт для привлечения клиентов на авторский курс.
               Проект состоит из нескольких простых блоков. Информационные, фотоотчеты, программа тренинга, форма для отправки заявки на приобретение курса.
-              Сайт корректно отображается на всех устройствах, имеет высокую скорость загрузки при первом посещении. 
+              Сайт корректно отображается на всех устройствах, имеет высокую скорость загрузки при первом посещении.
               </span>
-          </div>
+              </div>
 
-          <div class="portfolio__descrip-subtitle">
-            <span>Сроки</span> <br>
-            <span class="portfolio__descrip-text">3 дня</span>
+              <a href="https://pbeloborodov.github.io/luck.github.io/" class="btn" target="_blank">Подробнее</a>
+            </div>
+            <div class="portfolio__slider luky">
+              <img src="./dist/img/portfolio/mob-luky.png" alt="mob-luky">
+            </div>
           </div>
-          
-          <div class="portfolio__descrip-subtitle">
-            Стоимость <br>
-            <span class="portfolio__descrip-text">5 000 ₽</span>
+        </div>
+        <div class="slider__item">
+
+          <div class="portfolio__exemple">
+            <div class="portfolio__descrip">
+              <div class="portfolio__descrip-title">Фитнес центр "ТЕЛО" </div>
+              <div class="portfolio__descrip-subtitle">
+                <span>Описание проекта</span> <br>
+                <span class="portfolio__descrip-text">
+              Одностраничный сайт для фитнес центра.
+                  Проект состоит из нескольких простых блоков. На странице есть калькулятор, слайдеры для демонстрации фото, формы обратной связи, ссылки на другие страницы, общая информация об услугах центра.                 </span>
+              </div>
+
+
+              <a href="https://pbeloborodov.github.io/fitnes//" class="btn" target="_blank">Подробнее</a>
+            </div>
+            <div class="portfolio__slider fitnes">
+              <img src="./dist/img/portfolio/mob-fitnes.png" alt="mob-finess">
+            </div>
           </div>
-          <a href="https://pbeloborodov.github.io/luck.github.io/" class="btn">Подробнее</a>
         </div>
-        <div class="portfolio__slider">
-          <img src="./dist/img/portfolio/mob-luky.png" alt="mob-luky">
+        <div class="slider__item">
+
+          <div class="portfolio__exemple">
+            <div class="portfolio__descrip">
+              <div class="portfolio__descrip-title">Бланк для отправки информации о клиенте</div>
+              <div class="portfolio__descrip-subtitle">
+                <span>Описание проекта</span> <br>
+                <span class="portfolio__descrip-text">
+              Форма к заполнения  для сайта гостинцы.
+                  Поля для различных видов информации, блокирует не правильный ввод данных. Производит отправку данных на сервер или почту. Легко интегрируется в любой сайт.
+              </span>
+              </div>
+
+
+              <a href="https://pbeloborodov.github.io/form-gaidar.github.io/" class="btn" target="_blank">Подробнее</a>
+            </div>
+            <div class="portfolio__slider form-doc">
+            </div>
+          </div>
         </div>
-      </div> 
+        <div class="slider__item">
+
+          <div class="portfolio__exemple">
+            <div class="portfolio__descrip">
+              <div class="portfolio__descrip-title">Интерактивные элементы</div>
+              <div class="portfolio__descrip-subtitle">
+                <span>Описание проекта</span> <br>
+                <span class="portfolio__descrip-text">
+                  Выпадающее или появляющееся окно с размерами для товара магазина. Заполнение и отправка. Элемент одинаково смотрится и на мобильных устройствах.
+              </span>
+              </div>
+
+
+              <a href="https://pbeloborodov.github.io/tabl-form.github.io/" class="btn" target="_blank">Подробнее</a>
+            </div>
+            <div class="portfolio__slider form-size">
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
   <section class="contacts" id="contacts">
@@ -354,9 +410,19 @@
 
   </footer>
   <!-- scripts -->
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src=" ./dist/js/slick/slick.min.js"></script>
   <script src="./dist/js/particles.min.js"></script>
   <script src="./dist/js/app.js"></script>
   <script src="./dist/js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.slider').slick({});
+    });
+  </script>
+
+
 
 </body>
 
